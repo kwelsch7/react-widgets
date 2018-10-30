@@ -1,0 +1,24 @@
+# Dev Artifacts
+coverage/
+dist/
+lint/
+node_modules
+bower_components
+.sass-cache
+.awspublish*
+
+# Packaging
+npm-debug.log*
+yarn-error.log*
+
+# Optional npm cache directory
+.npm
+.packages-cache
+
+# VS
+.vscode/
+
+# Misc Files
+*.DS_Store
+.vagrant
+ubuntu-xenial*
