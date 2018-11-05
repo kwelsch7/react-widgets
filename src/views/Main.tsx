@@ -1,11 +1,18 @@
 import * as React from "react";
+import { WidgetList } from './WidgetList';
 
-export interface MainProps {
-  something: string;
-}
-
-export class Main extends React.Component<MainProps> {
-    render() {
-        return <h1>Hello from {this.props.something}!</h1>;
-    }
+export class Main extends React.PureComponent {
+  render() {
+    return (
+      <div className="container">
+        <header>
+          <h1>React Widgets</h1>
+          <h2>Meeting all your spatula needs</h2>
+        </header>
+        <div className="content">
+          <WidgetList/>
+        </div>
+      </div>
+    );
+  }
 }
